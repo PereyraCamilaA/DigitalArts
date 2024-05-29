@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- FAVICON -->
+
+    <link rel="icon" href="img/icon.png">
+
+    <!-- HOJA DE ESTILOS CSS -->
+
+    <link rel="stylesheet" href="css/estilo.css">
+
+    <link rel="stylesheet" href="css/index.css">
+
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+
+    <!-- TITULO -->
+
+    <title> Inicio </title>
+
+</head>
+
+<body>
+
+    <!------------------------------------------------ HEADER ------------------------------------------------>
+
+    <header>
+
+        <section>
+
+            <article id="logo">
+
+                <img src="img/header-footer/logo.png" usemap="#image-map" alt="logo">
+
+            </article>
+
+            <form action="#" id="buscador">
+
+                <input type="text" name="postal" list="informacion" placeholder="buscar cursos">
+
+                <button id="enviar"> Enviar </button>
+
+            </form>
+
+            <article id="carrito">
+
+                <img src="img/header-footer/carritocompra.png" alt="carrito">
+
+                <div>
+
+                   <span id="contador-cursos"><h4></h4></span>
+
+                </div>
+
+            </article>
+
+        </section>
+
+        <nav>
+
+            <ul>
+    
+                <li> <a href="index.html"><strong> Inicio </strong> </a> </li>
+
+                <li><a href="inscripcion-curso.html"> <strong> Inscripción </strong> </a></li>
+    
+                <li> <a href="calendarioFull.html"> <strong> Calendario </strong> </a> </li>
+    
+                <li> <a href="giftcard.html"> <strong> GiftCard </strong> </a> </li>
+    
+                <li> <a href="contacto.html"> <strong> Contacto </strong> </a> </li>
+        
+            </ul>
+
+        </nav>
+
+    </header>
+
+    <!------------------------------------------------ MAIN ------------------------------------------------>
+
+    <main>
+
+        <!------------------------ CARROUSEL ------------------------>
+
+
+        <div class="responsive" id="carrousel">
+
+            <div><img src="img/imagen-curso/illustrator-photoshop.jpg" alt=""></div>
+
+            <div><img src="img/imagen-curso/after-effects.jpg" alt=""></div>
+
+            <div><img src="img/imagen-curso/diseño-grafico.jpg" alt=""></div>
+
+            <div><img src="img/imagen-curso/motion-graphics.jpeg" alt=""></div>
+
+            <div><img src="img/imagen-curso/3D-blender.jpg" alt=""></div>
+
+            <div><img src="img/imagen-curso/ilustración-digital.jpg" alt=""></div>
+
+        </div>
+
+        <!------------------------ INFORMACION INSCRIPCIÓN ------------------------>
+
+        <section id="pasosinscripcion">
+
+            <article>
+
+                <h3> Elegí tu curso </h3>
+
+                <img src="img/paso_inscripcion/elegirCurso.png" alt="">
+
+            </article>
+
+            <article>
+
+                <h3> Fecha y hora </h3>
+
+                <img src="img/paso_inscripcion/elegirFechaHora.png" alt="">
+
+            </article>
+
+            <article>
+
+                <h3> Inscribite ahora </h3>
+
+                <img src="img/paso_inscripcion/inscripcion.png" alt="">
+                
+            </article>
+
+        </section>
+
+        <!------------------------ CURSOS DESTACADOS ------------------------>
+
+        <section id="cajacurso">
+
+            <!------- CURSO 1 ------->
+
+            <article>
+
+                <img src="img/imagen-curso/illustrator-photoshop.jpg" alt="">
+
+                <div class="cajadatos">
+
+                    <h4> Photoshop e Illustrator </h4>
+
+                    <a href="curso.html" id="detalle">  Ver Detalle </a> 
+
+                    <ul>
+
+                        <li> <strong> Duración: </strong> 5 meses </li>
+
+                        <li> <strong> Precio: </strong> $7.800 </li>
+
+                    </ul>
+
+                </div>
+
+                <button class="enviar" id="comprar1" ><a href="inscripcion-curso.html" data-curso='{"nombre": "Photoshop e Illustrator", "precio": 7800}'>Comprar</a></button>
+
+            </article>
+
+            <!------- CURSO 2 ------->
+
+            <article>
+
+                <img src="img/imagen-curso/after-effects.jpg" alt="">
+
+                <div class="cajadatos">
+
+                    <h4> After Effects </h4>
+
+                    <a href="curso.html" id="detalle">  Ver Detalle </a> 
+
+                    <ul>
+    
+                        <li> <strong> Duración: </strong> 2 meses </li>
+    
+                        <li> <strong> Precio: </strong> $4.000 </li>
+    
+                    </ul>
+
+                </div>
+
+                <button class="enviar" id="comprar2"><a href="inscripcion-curso.html" data-curso='{"nombre": "After Effects", "precio": 4000}'>Comprar</a></button>
+
+            </article>
+
+            <!------- CURSO 3 ------->
+
+            <article>
+
+                <img src="img/imagen-curso/diseño-grafico.jpg" alt="">
+
+                <div class="cajadatos">
+
+                    <h4> Fundamentos del Diseño Gráfico </h4>
+
+                    <a href="curso.html" id="detalle">  Ver Detalle </a> 
+
+                    <ul>
+    
+                        <li> <strong> Duración: </strong> 6 meses </li>
+    
+                        <li> <strong> Precio: </strong> $8.800 </li>
+    
+                    </ul>
+
+                </div>
+
+                <button class="enviar" id="comprar3"><a href="inscripcion-curso.html" data-curso='{"nombre": "Fundamentos del Diseño Gráfico", "precio": 8000}'>Comprar</a></button>
+
+            </article>
+
+            <!------- CURSO 4 ------->
+
+            <article>
+
+                <img src="img/imagen-curso/motion-graphics.jpeg" alt="">
+
+                <div class="cajadatos">
+
+                    <h4> Motion Graphics </h4>
+
+                    <a href="curso.html" id="detalle">  Ver Detalle </a> 
+
+                    <ul>
+    
+                        <li> <strong> Duración: </strong> 3 meses</li>
+    
+                        <li> <strong> Precio: </strong> $ 4.000</li>
+    
+                    </ul>
+    
+                </div>
+                
+                <button class="enviar" id="comprar4"><a href="inscripcion-curso.html" data-curso='{"nombre": "Motion Graphics", "precio": 4000}'>Comprar</a></button>
+
+            </article>
+
+            <!------- CURSO 5 ------->
+
+            <article>
+
+                <img src="img/imagen-curso/3D-blender.jpg" alt="" id="blender">
+
+                <div class="cajadatos">
+
+                    <h4> Diseño 3D (Blender) </h4>
+
+                    <a href="curso.html" id="detalle">  Ver Detalle </a> 
+
+                    <ul>
+
+                        <li> <strong> Duración: </strong> 4 meses </li>
+
+                        <li> <strong> Precio: </strong> $7.800 </li>
+
+                    </ul>
+
+                </div>
+                
+                <button class="enviar" id="comprar5"><a href="inscripcion-curso.html" data-curso='{"nombre": "Diseño 3D (Blender)", "precio": 7800}'>Comprar</a></button>
+
+            </article>
+            
+            <!------- CURSO 6 ------->
+
+            <article>
+
+                <img src="img/imagen-curso/ilustración-digital.jpg" alt="">
+
+                <div class="cajadatos">
+
+                    <h4> Ilustración Digital </h4>
+
+                    <a href="curso.html" id="detalle">  Ver Detalle </a> 
+
+                    <ul>
+    
+                        <li> <strong> Duración: </strong>  2 meses </li>
+    
+                        <li> <strong> Precio: </strong> $5.500 </li>
+    
+                    </ul>
+
+                </div>
+
+                <button class="enviar" id="comprar6"><a href="inscripcion-curso.html"  data-curso='{"nombre": "Ilustración Digital", "precio": 5500}'>Comprar</a></button>
+                
+            </article>
+
+        </section>
+
+    </main>
+
+    <!------------------------------------------------ FOOTER ------------------------------------------------>
+
+    <footer>
+
+        <section>
+
+            <article id="nuestrosdatos">
+
+                <div>
+
+                    <h2> Camila Anabella Pereyra </h2>
+
+                    <h2> DNI: 38786865 </h2>
+
+                </div>
+                
+            </article>
+
+            <article id="navegacionMenuFooter">
+
+                <ul>
+            
+                    <li> <a href="index.html"><strong> Inicio </strong> </a> </li>
+            
+                    <li><a href="curso.html"> <strong> Cursos </strong> </a></li>
+            
+                    <li> <a href="calendario.html"> <strong> Calendario </strong> </a> </li>
+            
+                    <li> <a href="giftcard.html"> <strong> GiftCard </strong> </a> </li>
+            
+                    <li> <a href="contacto.html"> <strong> Contacto </strong> </a> </li>
+                
+                </ul>
+
+            </article>
+
+            <article id="redes">
+
+                    <a href="https://www.facebook.com/" target="_blank" class="facebook"></a>
+
+			        <a href="https://twitter.com/" target="_blank" class="twitter"></a>
+
+			        <a href="https://www.instagram.com/" target="_blank" class="instagram"></a>
+
+            </article>
+
+        </section>
+
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="js/index.js"></script>
+
+</body>
+
+</html>

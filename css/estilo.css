@@ -1,0 +1,254 @@
+/* PARA PANTALLAS DE PC*/
+@import url("https://fonts.googleapis.com/css2?family=Ysabeau:wght@300&display=swap");
+body {
+  font-family: "Ysabeau", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+/*------------------------------- HEADER -------------------------------*/
+header {
+  background-color: #454545;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+header section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 120px;
+}
+/*------------- LOGO DE LA PAGINA DIGITAL ARTS ------------*/
+#logo {
+  margin-left: 2%;
+  height: 100%;
+  width: auto;
+  flex-shrink: 0;
+  display: flex;
+}
+#logo img {
+  height: 100%;
+  width: auto;
+}
+/*------------- BUSCADOR DEL HEADER ------------*/
+#buscador {
+  display: flex;
+  align-items: center;
+  width: 60%;
+  justify-content: center;
+}
+#buscador input {
+  border: #ffa559 2px solid;
+  height: 25px;
+  border-radius: 15px;
+  padding-left: 12px;
+  width: 100%;
+  max-width: 500px;
+}
+/* INCLUYE TODOS LOS BOTONES DE LA PAGINA */
+.enviar,
+#enviar {
+  padding: 0 5%;
+  border: #8b3202;
+  height: 27px;
+  border-radius: 12px;
+  text-decoration: none;
+  background-color: #ff5b00;
+  font-size: 16px;
+  font-weight: bold;
+}
+#buscador button {
+  margin: 0 0 0 10px;
+}
+.enviar:hover,
+#enviar:hover {
+  background-image: linear-gradient(#ffa559, #ebc2a2, #ffa559);
+}
+/*------------- IMAGEN DEL CARRITO ------------*/
+#carrito {
+  width: 50px;
+  display: flex;
+  align-items: center;
+  margin-right: 3%;
+}
+#carrito img {
+  width: 100%;
+  position: relative;
+  flex-shrink: 0;
+}
+#contador-cursos{
+  background-color: #ffe6c7;
+  opacity: 65%;
+  border-radius: 20px;
+  width: 20px;
+  height: 20px;
+  position: relative;
+  top: -20px;
+  left: -20%;
+  text-align: center;
+  display: block;
+  font-weight: bold;
+  line-height: 18px;
+}
+/*------------- MENU ------------*/
+nav {
+  display: flex;
+  justify-content: center;
+}
+nav ul {
+  list-style: none;
+}
+nav > ul {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: space-evenly;
+  margin: 0;
+  padding: 0;
+}
+nav ul > li > a {
+  background-color: #ff5b00;
+  margin: 0 15px;
+  border-radius: 10px 10px 0 0;
+  padding: 4px 40px;
+  text-decoration: none;
+  color: #000000;
+  display: block;
+  font-size: unset;
+}
+nav a:hover {
+  background-image: linear-gradient(#ffa559, #ebc2a2, #ffa559);
+}
+/*------------------------------- FOOTER -------------------------------*/
+footer {
+  background-color: #454545;
+  margin: 20px 0 0 0;
+}
+footer section {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+/* DATOS PARTICIPANTES */
+#nuestrosdatos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 15px;
+  margin: 0.5em;
+}
+#nuestrosdatos h2 {
+  color: #ffe6c7;
+  text-align: center;
+}
+/* MENU */
+#navegacionMenuFooter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 1em;
+}
+#navegacionMenuFooter ul {
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  flex-wrap: wrap;
+}
+#navegacionMenuFooter ul li {
+  margin: 0.5em;
+}
+#navegacionMenuFooter a {
+  color: #ffe6c7;
+  text-decoration: none;
+  font-size: 20px;
+}
+#navegacionMenuFooter a:hover {
+  color: #ffa559;
+}
+/* REDES SOCIALES */
+#redes {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin: 0.3em;
+}
+#redes a {
+  background-image: url(../img/header-footer/social.png);
+  width: 70px;
+  height: 70px;
+  display: flex;
+}
+.facebook {
+  background-position: 0px 0px;
+}
+.twitter {
+  background-position: -72px 0px;
+}
+.instagram {
+  background-position: -144px 0px;
+}
+.facebook:hover {
+  background-position: 0px -72px;
+}
+.twitter:hover {
+  background-position: -72px -72px;
+}
+.instagram:hover {
+  background-position: -144px -72px;
+}
+/*--------------------------Media Query--------------------------*/
+/* PARA Tablets*/
+@media screen and (max-width: 1024px) {
+  nav ul > li > a {
+    padding: 4px 22px;
+    margin: 0 8px;
+  }
+}
+/* PARA Celulares*/
+@media screen and (max-width: 600px) {
+  nav ul > li > a {
+    font-size: small;
+    padding: 4px 10px;
+    margin: 0 2px;
+  }
+  header section {
+    height: 80px;
+  }
+  #enviar {
+    font-size: 3vw;
+  }
+  #carrito img {
+    width: 80%;
+  }
+  #carrito h4 {
+    border-radius: 20px;
+    width: 20px;
+    height: 25px;
+    position: relative;
+    top: -20px;
+    right: 40px;
+    text-align: center;
+    padding: 0 10px;
+}
+#navegacionMenuFooter a {
+  color: #ffe6c7;
+  text-decoration: none;
+  font-weight: bold;
+}
+#nuestrosdatos {
+  font-size: 10px;
+  font-weight: lighter;
+}
+#redes {
+  scale: 0.8;
+}
+#buscador {
+  scale: 0.9;
+}
+header section {
+  scale: 0.9;
+}
+}

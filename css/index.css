@@ -1,0 +1,93 @@
+/*ESTE ES EL CÓDIGO RESPONSIVE PARA MOBILE FIRST*/
+/*MQ PARA PANTALLAS DE TABLET*/
+@import url("https://fonts.googleapis.com/css2?family=Ysabeau:wght@300&display=swap");
+/*------------- CARROUSEL ------------*/
+#carrousel {
+    text-align: center;
+    overflow-x: clip;
+}
+#carrousel img {
+    width: 100%;
+}
+/*------------- INFORMACION PARA ANOTARSE ------------*/
+#pasosinscripcion {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px 0;
+}
+#pasosinscripcion h3 {
+    font-size: 25px;
+    margin: 10px;
+}
+#pasosinscripcion article {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#pasosinscripcion img {
+    width: 80px;
+}
+/*----------------------- CURSOS DESTACADOS -----------------------*/
+#cajacurso {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+#cajacurso article {
+    border: #FFA559 2px solid;
+    background-color: #FFE6C7;
+    width: 28%;
+    min-width: 300px;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    margin: 10px 5px 10px 5px;
+}
+.cajadatos h4 {
+    font-size: 25px;
+    margin: 10px;
+}
+#detalle{
+    font-size: 15px;
+    margin: 10px;
+    text-decoration: none;
+    color: #000000;
+}
+.cajadatos ul {
+    margin: 0px;
+}
+.cajadatos li {
+    margin-left: 10px;
+    list-style: none;
+    font-size: 20px;
+    margin-top: 1em;
+}
+#cajacurso img {
+    max-width: 100%;
+    border-radius: 10px 10px 0 0;
+}
+.enviar {
+    margin: 10px 10px 10px 0;
+    align-self: flex-end;
+}
+.enviar a {
+    text-decoration: none;
+    color: #000000;
+}
+@media screen and (max-width: 1024px) {
+    #pasosinscripcion {
+        margin: 10px 0;
+    }
+}
+@media screen and (max-width: 600px) {
+    #pasosinscripcion img {
+        width: 50px;
+    }
+    #pasosinscripcion h3 {
+        font-size: smaller;
+        margin: 5px;
+    }
+    #pasosinscripcion {
+        margin: 5px 0;
+    }
+}

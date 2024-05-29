@@ -1,0 +1,376 @@
+/* Estilos generales */
+body {
+  font-family: Arial, sans-serif;
+}
+
+/* Estilos para el formulario */
+#formInsc {
+  text-align: center;
+  margin-top: 20px;
+}
+
+h2 {
+  margin-bottom: 20px;
+}
+
+input[type="text"],
+input[type="number"] {
+  width: 200px;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.sumar {
+  width: 20px;
+  height: 20px;
+  margin-left: 5px;
+  vertical-align: middle;
+}
+
+#agregarPersona {
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+.boton-enviar {
+  margin-top: 20px;
+}
+
+#total {
+  font-weight: bold;
+}
+
+button.enviar {
+  padding: 10px 20px;
+  background-color: orangered;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+/* Estilos para el modal */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal-content {
+  background-color: #fefefe;
+  margin: 15% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+}
+
+.close {
+  color: #888;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+/*------------- FORMULARIOS ------------*/
+#agregarPersona img {
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+}
+#agregarPersona p {
+  margin: 0;
+  cursor: pointer;
+  color: orangered;
+  text-decoration: underline;
+  font-size: 18px;
+  font-weight: 600;
+}
+#agregarPersona {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 10px; 
+  width: 20%;
+  height: 50px;
+}
+.boton-enviar {
+  margin-top: 20px;
+}
+/* Estilos adicionales para la lista de datos */
+#datosList {
+  text-align: left;
+  margin-top: 20px;
+  padding-left: 0;
+}
+
+#datosList li {
+  list-style-type: none;
+  margin-bottom: 10px;
+}
+
+#formInsc input {
+  border: #FFA559 2px solid;
+  width: 28%;
+  height: 30px;
+  border-radius: 15px;
+  padding-left: 10px;
+}
+.sumar {
+  max-width: 20%;
+}
+.boton-enviar {
+  width: 28%;
+  height: 50px;
+  align-self: flex-end;
+}
+.boton-enviar p {
+  font-size: 20px;
+}
+/* Estilos para reducir el tamaño del botón "Eliminar" */
+.borrar {
+  width: 15px;
+  height: 15px;
+}
+
+
+  /*------------- MODAL ------------*/
+
+  .modal {
+    display: none; 
+    position: fixed; 
+    z-index: 1; 
+    padding-top: 100px; 
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%;
+    overflow: auto; 
+    background-color: rgb(0,0,0); 
+    background-color: rgba(0,0,0,0.4); 
+  }
+  
+  .modal-content {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    display: block;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    flex-direction: column;
+    width: 40%;
+  }
+  .modal-content h2{
+    text-align: center;
+  }
+  
+  .close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  #img-modal{
+  width: 15%;
+  }
+
+
+
+
+
+
+
+
+
+/* PARA Celulares*/
+@media screen and (max-width: 600px) {
+  /* Estilos generales */
+body {
+  font-family: Arial, sans-serif;
+}
+
+/* Estilos para el formulario */
+#formInsc {
+  text-align: center;
+  margin-top: 20px;
+}
+
+h2 {
+  margin-bottom: 20px;
+}
+
+input[type="text"],
+input[type="number"] {
+  width: 200px;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.sumar {
+  width: 20px;
+  height: 20px;
+  margin-left: 5px;
+  vertical-align: middle;
+}
+
+#agregarPersona {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 10px; 
+  width: 20%;
+  height: 50px;
+}
+
+#agregarPersona img {
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+}
+
+#agregarPersona p {
+  margin: 0;
+  cursor: pointer;
+  color: orangered;
+  text-decoration: underline;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.boton-enviar {
+  margin-top: 20px;
+}
+
+.boton-enviar p {
+  font-size: 20px;
+}
+
+#total {
+  font-weight: bold;
+}
+
+button.enviar {
+  padding: 10px 20px;
+  background-color: orangered;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.borrar {
+  width: 15px;
+  height: 15px;
+}
+
+/* Estilos para la lista de datos */
+#datosList {
+  text-align: left;
+  margin-top: 20px;
+  padding-left: 0;
+}
+
+#datosList li {
+  list-style-type: none;
+  margin-bottom: 10px;
+}
+
+/* Estilos para el modal */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal-content {
+  background-color: #fefefe;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  display: block;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  flex-direction: column;
+  width: 40%;
+}
+
+.close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+#img-modal {
+  width: 15%;
+}
+}
+/* Estilos para tamaño de tablets */
+@media screen and (max-width: 1024px) {
+  input[type="text"],
+  input[type="number"] {
+    width: 150px;
+  }
+
+  #formInsc input {
+    width: 23%;
+  }
+
+  .sumar {
+    max-width: 15%;
+  }
+
+  .boton-enviar {
+    width: 23%;
+  }
+
+  #img-modal#img-modal {
+    width: 15%;
+  }
+}

@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- FAVICON -->
+
+    <link rel="icon" href="img/icon.png">
+
+    <!-- HOJA DE ESTILOS CSS -->
+
+    <link rel="stylesheet" href="css/estilo.css">
+
+    <link rel="stylesheet" href="css/giftcard.css">
+
+    <!-- TITULO -->
+
+    <title> GiftCard </title>
+
+</head>
+
+<body>
+
+    <!------------------------------------------------ HEADER ------------------------------------------------>
+
+    <header>
+
+        <section>
+
+            <article id="logo">
+
+                <img src="img/header-footer/logo.png" usemap="#image-map" alt="logo">
+
+            </article>
+
+            <form action="#" id="buscador">
+
+                <input type="text" name="postal" list="informacion" placeholder="buscar cursos">
+
+                <button id="enviar"> Enviar </button>
+
+            </form>
+
+            <article id="carrito">
+
+                <img src="img/header-footer/carritocompra.png" alt="carrito">
+
+                <div>
+
+                    <span id="contador-cursos">
+                        <h4></h4>
+                    </span>
+
+                </div>
+
+            </article>
+
+        </section>
+
+        <nav>
+
+            <ul>
+
+                <li> <a href="index.html"><strong> Inicio </strong> </a> </li>
+
+                <li><a href="inscripcion-curso.html"> <strong> Inscripción </strong> </a></li>
+
+                <li> <a href="calendarioFull.html"> <strong> Calendario </strong> </a> </li>
+
+                <li> <a href="giftcard.html"> <strong> GiftCard </strong> </a> </li>
+
+                <li> <a href="contacto.html"> <strong> Contacto </strong> </a> </li>
+
+            </ul>
+
+        </nav>
+
+    </header>
+
+    <!------------------------------------------------ MAIN ------------------------------------------------>
+
+    <main>
+
+        <section>
+
+            <!------------------------ TARJETA ------------------------>
+
+            <article id="tarjeta">
+                <h2> GiftCard Digital ARTS </h2>
+                <h3></h3>
+            </article>
+
+            <!------------------------ OPCIONES GIFTCARD ------------------------>
+
+            <article id="opcionesGift">
+
+                <h2> Personaliza tu GiftCard </h2>
+
+                <!------- FORMULARIO NOMBRE Y APELLIDO ------->
+
+                <form action="#">
+
+                    <label for="texto"> Ingresar nombre y apellido </label>
+
+                    <input type="text" class="campo" name="texto" id="texto" placeholder="Ingrese nombre y apellido.">
+
+
+                <!------- FORMULARIO COLOR TEXTO------->
+
+                <div id="opcionColor">
+
+                    <label for="color"> Color del texto en la tarjeta </label>
+
+                    <div class="contenedorbotones">
+                        <div class="botoncolor">
+                        <input type="radio" name="color" value="color1" id="radioColor1">
+                        <img src="img/imagen-gift/color-FF5B00.png" alt="">
+                        </div>
+                        <div class="botoncolor">
+                        <input type="radio" name="color" value="color2" id="radioColor2">
+                        <img src="img/imagen-gift/color454545.png" alt="">
+                        </div>
+                        <div class="botoncolor">
+                        <input type="radio" name="color" value="color3" id="radioColor3">
+                        <img src="img/imagen-gift/colorFFA559.png" alt="">
+                        </div>
+                        <div class="botoncolor">
+                        <input type="radio" name="color" value="color4" id="radioColor4">
+                        <img src="img/imagen-gift/colorFFE6C7.png" alt="">
+                </div>
+
+                </div>
+
+                <!------- FORMULARIO TAMAÑO LETRA ------->
+
+                <div id="opcionTamaño">
+
+                    <label for="tamaño"> Tamaño de fuente </label>
+
+                    <div class="contenedortamano">
+                        <div class="botontamano">
+                        <input type="radio" name="tamaño" value="tamaño1" id="radioTamaño1">
+                        <p id="quince"> 15px </p>
+                        </div>
+                        <div class="botontamano">
+                        <input type="radio" name="tamaño" value="tamaño2" id="radioTamaño2">
+                        <p id="veinte"> 20px </p>
+                        </div>
+                        <div class="botontamano">
+                        <input type="radio" name="tamaño" value="tamaño3" id="radioTamaño3">
+                        <p id="veinticinco"> 25px </p>
+                        </div>
+                        <div class="botontamano">
+                        <input type="radio" name="tamaño" value="tamaño4" id="radioTamaño4">
+                        <p id="treinta"> 30px </p>
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <!------TOTAL DISPONIBLE ------->
+
+                <div id="opcionMonto">
+
+                    <label for="monto"> Vale por: $ </label>
+                    <input type="number" name="valor" value="valor" id="valor" class="campo"
+                        placeholder="Ingrese el monto de la Giftcard.">
+                </div>
+
+                <!------- FORMULARIO UBICACION PRECIO ------->
+
+                <div id="ubicarPrecio">
+
+                    <label for="ubicacion"> Ubicación del texto </label>
+
+                    <div class="contenedoralineacion">
+                        <div class="botonalineacion">
+                        <input type="radio" name="alineacion" value="centrado" id="radioCentro">
+                        <label for="radioCentro">Centro</label>
+                        <img src="img/imagen-gift/opcionDos.png" alt="">
+                        </div>
+                        <div class="botonalineacion">
+                        <input type="radio" name="alineacion" value="arriba" id="radioIzquierda">
+                        <label for="radioIzquierda">Arriba</label>
+                        <img src="img/imagen-gift/opcionUno.png" alt="">
+                        </div>
+                        <div class="botonalineacion">
+                        <input type="radio" name="alineacion" value="abajo" id="radioDerecha">
+                        <label for="radioDerecha">Abajo</label>
+                        <img src="img/imagen-gift/opcionTres.png" alt="">
+                        </div>
+                    </div>
+
+                </div>
+
+                <!---------FORMULARIO FONDO------->
+                <div id="opcionFondo">
+
+                    <label for="fondo"> Fondo </label>
+
+                    <div id="ubicFondo">
+                        <div class="botonfondo">
+                        <input type="radio" name="fondo" value="fondo1.jpg" id="radioFondo1">
+                        <img src="img/imagen-gift/fondo1.jpg" alt="">
+                        </div>
+                        <div class="botonfondo">
+                        <input type="radio" name="fondo" value="fondo2.jpg" id="radioFondo2">
+                        <img src="img/imagen-gift/fondo2.jpg" alt="">
+                        </div>
+                        <div class="botonfondo">
+                        <input type="radio" name="fondo" value="fondo3.jpg" id="radioFondo3">
+                        <img src="img/imagen-gift/fondo3.jpg" alt="">
+                        </div>
+                        <div class="botonfondo">
+                        <input type="radio" name="fondo" value="fondo4.jpg" id="radioFondo4">
+                        <img src="img/imagen-gift/fondo4.jpg" alt="">
+                        </div>
+                        <div class="botonfondo">
+                        <input type="radio" name="fondo" value="fondo5.jpg" id="radioFondo5">
+                        <img src="img/imagen-gift/fondo5.jpg" alt="">
+                        </div>
+                    </div>
+
+                </div>
+
+                <!------- BOTON ENVIAR ------->
+
+                <button class="enviar" id="botonEnviar"> Confirmar </button>
+
+            </form>
+
+            </article>
+
+        </section>
+
+    </main>
+
+    <!------------------------------------------------ FOOTER ------------------------------------------------>
+
+    <footer>
+
+        <section>
+
+            <article id="nuestrosdatos">
+
+                <div>
+
+                    <h2> Camila Anabella Pereyra </h2>
+
+                    <h2> DNI: 38786865 </h2>
+
+                </div>
+
+            </article>
+
+            <article id="navegacionMenuFooter">
+
+                <ul>
+
+                    <li> <a href="index.html"><strong> Inicio </strong> </a> </li>
+
+                    <li><a href="curso.html"> <strong> Cursos </strong> </a></li>
+
+                    <li> <a href="calendario.html"> <strong> Calendario </strong> </a> </li>
+
+                    <li> <a href="giftcard.html"> <strong> GiftCard </strong> </a> </li>
+
+                    <li> <a href="contacto.html"> <strong> Contacto </strong> </a> </li>
+
+                </ul>
+
+            </article>
+
+            <article id="redes">
+
+                <a href="https://www.facebook.com/" target="_blank" class="facebook"></a>
+
+                <a href="https://twitter.com/" target="_blank" class="twitter"></a>
+
+                <a href="https://www.instagram.com/" target="_blank" class="instagram"></a>
+
+            </article>
+
+        </section>
+
+    <!------------------------------------------------ MODAL ------------------------------------------------>
+   
+    <div id="myModal" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <h2>¡ TU GIFTCARD HA SIDO COMPRADA EXITOSAMENTE !</h2>
+                <p>Te contactaremos a la brevedad a través de tu correo electrónico para que puedas efectuar el pago y finalizar tu compra.</p>
+                <h3>Muchas gracias por elegirnos.</h3>
+                <img src="img/header-footer/logo.png" alt="logo" id="img-modal">
+            </div>
+        </div>
+
+    </footer>
+
+    <script src="js/giftcard.js"></script>
+    <script src="js/index.js"></script>
+
+</body>
+
+</html>

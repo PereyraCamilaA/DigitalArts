@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- FAVICON -->
+
+    <link rel="icon" href="img/header-footer/logo.png">
+
+    <!-- HOJA DE ESTILOS CSS -->
+
+    <link rel="stylesheet" href="css/estilo.css">
+
+    <link rel="stylesheet" href="css/contacto.css">
+
+    <!-- TITULO -->
+
+    <title> Formulario de Contacto </title>
+
+</head>
+
+<body>
+
+    <!------------------------------------------------ HEADER ------------------------------------------------>
+
+    <header>
+
+        <section>
+
+            <article id="logo">
+
+                <img src="img/header-footer/logo.png" usemap="#image-map" alt="logo">
+
+            </article>
+
+            <form action="#" id="buscador">
+
+                <input type="text" name="postal" list="informacion" placeholder="buscar cursos">
+
+                <button id="enviar"> Enviar </button>
+
+            </form>
+
+            <article id="carrito">
+
+                <img src="img/header-footer/carritocompra.png" alt="carrito">
+
+                <div>
+
+                   <span id="contador-cursos"><h4></h4></span>
+
+                </div>
+
+            </article>
+
+        </section>
+
+        <nav>
+
+            <ul>
+                    
+                <li> <a href="index.html"><strong> Inicio </strong> </a> </li>
+
+                <li><a href="inscripcion-curso.html"> <strong> Inscripción </strong> </a></li>
+    
+                <li> <a href="calendarioFull.html"> <strong> Calendario </strong> </a> </li>
+    
+                <li> <a href="giftcard.html"> <strong> GiftCard </strong> </a> </li>
+    
+                <li> <a href="contacto.html"> <strong> Contacto </strong> </a> </li>
+                
+            </ul>
+
+        </nav>
+
+    </header>
+
+    <!------------------------------------------------ MAIN ------------------------------------------------>
+
+    <main>
+
+        <!------------------------ FORMULARIO ------------------------>
+
+        <section id="contacto-mapa">
+
+            <article id="formulario">
+
+                <form id="contact-form" action="#" method="POST">
+                    <label for="nom-ape">Ingrese Nombre y Apellido:</label>
+                    <input type="text" id="nom-ape" name="nom-ape" placeholder="Coloque su nombre y apellido." required>
+            
+                    <label for="email">Ingrese su email:</label>
+                    <input type="email" id="email" name="email" placeholder="Coloque aquí su correo electrónico." required>
+            
+                    <label for="telefono">Ingrese número de teléfono:</label>
+                    <input type="tel" id="telefono" name="telefono" placeholder="Coloque su teléfono de contacto." required>
+            
+                    <label for="mensaje">Deje aquí su mensaje:</label>
+                    <textarea id="mensaje" name="mensaje" cols="30" rows="10" maxlength="1000" placeholder="Deje aquí su consulta." required></textarea>
+                    <p id="contador-caracteres">Caracteres ingresados: 0 | Caracteres restantes: 1000</p>
+            
+                    <input type="submit" class="enviar" value="Enviar">
+                </form>
+            
+                <div id="popup" style="display:none;">
+                    <p>Consulta enviada</p>
+                    <button id="btnAceptar">Aceptar</button>
+                </div>
+            
+
+            </article>
+
+            <!------------------------ MAPA ------------------------>
+
+            <article id="mapa">
+
+                <h3> Mapa de las oficinas </h3>
+
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d26253.181520593665!2d-58.57172156610667!
+                3d-34.6635993732823!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcc62cc3ef7083%3A0x8867107f425fade5!
+                2sUniversidad%20Nacional%20de%20La%20Matanza!5e0!3m2!1ses!2sar!4v1682886143930!5m2!1ses!2sar" 
+                width="1050" height="500" style="border:0;" allowfullscreen="" loading="lazy" 
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+            </article>
+
+        </section>
+
+    </main>
+
+    <!------------------------------------------------ FOOTER ------------------------------------------------>
+
+    <footer>
+
+        <section>
+
+            <article id="nuestrosdatos">
+
+                <div>
+
+                    <h2> Camila Anabella Pereyra </h2>
+
+                    <h2> DNI: 38786865 </h2>
+
+                </div>
+
+            </article>
+
+            <article id="navegacionMenuFooter">
+
+                <ul>
+            
+                    <li> <a href="index.html"><strong> Inicio </strong> </a> </li>
+            
+                    <li><a href="curso.html"> <strong> Cursos </strong> </a></li>
+            
+                    <li> <a href="calendario.html"> <strong> Calendario </strong> </a> </li>
+            
+                    <li> <a href="giftcard.html"> <strong> GiftCard </strong> </a> </li>
+            
+                    <li> <a href="contacto.html"> <strong> Contacto </strong> </a> </li>
+                
+                </ul>
+
+            </article>
+
+            <article id="redes">
+
+                    <a href="https://www.facebook.com/" target="_blank" class="facebook"></a>
+
+			        <a href="https://twitter.com/" target="_blank" class="twitter"></a>
+
+			        <a href="https://www.instagram.com/" target="_blank" class="instagram"></a>
+
+            </article>
+
+        </section>
+
+    </footer>
+
+    <script src="js/contacto.js"></script>
+
+</body>
+
+</html>

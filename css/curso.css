@@ -1,0 +1,226 @@
+main {
+  margin-top: 30px;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+main section {
+  width: 75%;
+}
+/*------------- INFORMACIÓN ------------*/
+#infoCursoPrincipal {
+  display: flex;
+  justify-content: space-around;
+  margin: 0 3%;
+}
+#infoCursoPrincipal div {
+  width: 100%;
+  margin: 0 3%;
+}
+#infoCursoPrincipal img {
+  border-radius: 20px;
+  width: 35%;
+  height: 30%;
+  align-self: center;
+  margin-left: 10px;
+}
+#infoCursoPrincipal h2 {
+  font-size: 35px;
+  margin-bottom: 15px;
+}
+#infoCursoPrincipal li {
+  list-style: none;
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+/*------------- REQUISITOS ------------*/
+#requisito {
+  display: flex;
+  flex-direction: column;
+  margin: 20px;
+}
+#requisito h4 {
+  margin-top: 15px;
+  font-size: 18px;
+}
+#requisito ul {
+  padding-left: 30px;
+  margin-top: 10px;
+}
+#requisito .enviar {
+  border: #ff5b00 2px solid;
+  height: 40px;
+  margin: 5px 25px;
+  align-self: flex-end;
+}
+.enviar a {
+  text-decoration: none;
+  color: black;
+}
+/*------------- DOCENTE ------------*/
+#docente {
+  border: #ff5b00 2px solid;
+  background-color: #ffe6c7;
+  border-radius: 20px;
+  padding: 20px;
+  margin: 1% 6%;
+}
+#docente div {
+  display: flex;
+  align-items: center;
+}
+#docente img {
+  width: 8vw;
+}
+#docente h2 {
+  margin-left: 15px;
+}
+#docente p {
+  margin-top: 15px;
+}
+/*------------- OTROS CURSOS ------------*/
+aside {
+  width: 23%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  margin: 0 5px;
+}
+.infocurso {
+  border: #522710 2px solid;
+  background-color: #ffa559;
+  border-radius: 20px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 0 1%;
+}
+.infocurso h4 {
+  font-size: 20px;
+  margin: 5%;
+}
+.infocurso ul {
+  list-style: none;
+  padding: 0 0 0 0;
+  width: max-content;
+}
+.infocurso .enviar {
+  border: #ff5b00 2px solid;
+  align-self: flex-end;
+  margin: 5% 5% 3% 0;
+}
+.infocurso .enviar a {
+  text-decoration: none;
+  color: black;
+}
+.acordeon-content {
+  display: none;
+  padding: 5px;
+}
+.acordeon-content a,
+.acordeon-content input[type="radio"] {
+  flex: 0 0 50%;
+  display: flex;
+  align-items: center;
+  padding: 5px;
+  text-decoration: none;
+}
+.acordeoncontent input[type="radio"] {
+  margin-right: 5px;
+}
+.acordeon-btn {
+  cursor: pointer;
+  padding: 10px;
+  width: 100%;
+  max-width: 1000px;
+  text-align: left;
+  outline: none;
+  background-color: #f1f1f1;
+  border: 1px solid orangered;
+  cursor: pointer;
+}
+.dropdown-btn:hover {
+  background-color: #ddd;
+}
+.acordeon-btn:after {
+  content: "\002B";
+  color: #777;
+  float: right;
+  font-weight: bold;
+  margin-left: 5px;
+}
+.acordeon-btn.active:after {
+  content: "\2212";
+}
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+.modal-content {
+  background-color: #fefefe;
+  margin: 15% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+}
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+.acordeon{
+  display: flex;
+  flex-direction: column;
+}
+/*--------------------------Media Query--------------------------*/
+/* PARA Tablets*/
+@media screen and (max-width: 1024px) {
+  main section{
+    width: 100%;
+  }
+  aside {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+  }
+  .infocurso  {
+    width: 200px;
+  }
+}
+/* PARA Celulares*/
+@media screen and (max-width: 600px) {
+  aside {
+    flex-direction: column;
+  }
+  .infocurso  {
+    width: auto;
+    margin: 1% 3%;
+  }
+  .infocurso h4 {
+    margin: 1%;
+  }
+  .infocurso .enviar {
+    margin: 0% 5% 1% 0;
+  }
+  #infoCursoPrincipal img {
+    width: 80%;
+  }
+  #infoCursoPrincipal{
+    flex-direction: column-reverse;
+  }
+}

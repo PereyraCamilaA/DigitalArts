@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- FAVICON -->
+
+    <link rel="icon" href="img/icon.png">
+
+    <!-- HOJA DE ESTILOS CSS -->
+
+    <link rel="stylesheet" href="css/estilo.css">
+
+    <link rel="stylesheet" href="css/inscripcion-curso.css">
+
+    <!-- TITULO -->
+
+    <title> Inscripción </title>
+
+</head>
+
+<body>
+
+    <!------------------------------------------------ HEADER ------------------------------------------------>
+
+    <header>
+
+        <section>
+
+            <article id="logo">
+
+                <img src="img/header-footer/logo.png" usemap="#image-map" alt="logo">
+
+            </article>
+
+            <form action="#" id="buscador">
+
+                <input type="text" name="postal" list="informacion" placeholder="buscar cursos">
+
+                <button id="enviar"> Enviar </button>
+
+            </form>
+
+            <article id="carrito">
+
+                <img src="img/header-footer/carritocompra.png" alt="carrito">
+
+                <div>
+
+                    <span id="contador-cursos"><h4></h4></span>
+ 
+                 </div>
+
+            </article>
+
+        </section>
+
+        <nav>
+
+            <ul>
+    
+                <li> <a href="index.html"><strong> Inicio </strong> </a> </li>
+
+                <li><a href="inscripcion-curso.html"> <strong> Inscripción </strong> </a></li>
+    
+                <li> <a href="calendarioFull.html"> <strong> Calendario </strong> </a> </li>
+    
+                <li> <a href="giftcard.html"> <strong> GiftCard </strong> </a> </li>
+    
+                <li> <a href="contacto.html"> <strong> Contacto </strong> </a> </li>
+        
+            </ul>
+
+        </nav>
+
+    </header>
+
+    <!------------------------------------------------ MAIN ------------------------------------------------>
+
+    <main>
+
+        <section id="formInsc">
+            <article>
+              <h2>Inscripción Photoshop e Illustrator</h2>
+              <form action="#">
+                <input type="text" id="nombre" name="inscripcion"  placeholder="Ingresar nombre" required>
+                <input type="text" id="apellido" name="inscripcion" placeholder="Ingresar apellido" required>
+                <input type="number" id="dni" name="inscripcion" placeholder="Ingresar DNI" required>
+                <p><strong>Importe:</strong> $7800</p>
+                <img src="img/borrar.png" alt="borrar" class="borrar">
+              </form>
+     
+              <div id="agregarPersona">
+                <img src="img/sumar.png" alt="agregar" class="sumar">
+                <p>Agregar persona</p>
+              </div>
+              <form action="#" class="boton-enviar">
+                <p><strong>Total:</strong> <span id="total"></span></p>
+                <button class="enviar">Inscribirse</button>
+
+                <div id="myModal" class="modal">
+                    <div class="modal-content" id = 'modal-Content'>
+                      <span class="close">&times;</span>
+                      <ul id="datosList"></ul>
+                    </div>
+                  </div>
+
+              </form>
+            </article>
+          </section>
+
+    </main>
+
+    <!------------------------------------------------ FOOTER ------------------------------------------------>
+
+    <footer>
+
+        <section>
+
+            <article id="nuestrosdatos">
+
+                <div>
+
+                    <h2> Camila Anabella Pereyra </h2>
+
+                    <h2> DNI: 38786865 </h2>
+
+                </div>
+                
+            </article>
+
+            <article id="navegacionMenuFooter">
+
+                <ul>
+            
+                    <li> <a href="../index.html"><strong> Inicio </strong> </a> </li>
+            
+                    <li><a href="../curso.html"> <strong> Cursos </strong> </a></li>
+            
+                    <li> <a href="../calendario.html"> <strong> Calendario </strong> </a> </li>
+            
+                    <li> <a href="../giftcard.html"> <strong> GiftCard </strong> </a> </li>
+            
+                    <li> <a href="../contacto.html"> <strong> Contacto </strong> </a> </li>
+                
+                </ul>
+
+            </article>
+
+            <article id="redes">
+
+                    <a href="https://www.facebook.com/" target="_blank" class="facebook"></a>
+
+			        <a href="https://twitter.com/" target="_blank" class="twitter"></a>
+
+			        <a href="https://www.instagram.com/" target="_blank" class="instagram"></a>
+
+            </article>
+
+        </section>
+
+          <!------------------------------------------------ MODAL ------------------------------------------------>
+    
+    </footer>
+
+    <script src="js/index.js"></script>
+    <script src="js/inscripcion-curso.js"></script>
+
+</body>
+
+</html>

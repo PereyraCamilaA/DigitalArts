@@ -1,0 +1,47 @@
+/*ESTE ES EL CÓDIGO RESPONSIVE PARA MOBILE FIRST*/
+
+/*MQ PARA PANTALLAS DE TABLET*/
+@media screen and (min-width:48em){
+}
+/*MQ PARA PANTALLAS DE PC*/
+@media screen and (min-width:60em){
+*{
+    font-family: 'Ysabeau', sans-serif;
+}
+.contenedor-calendario{
+    width: 90%;
+    margin: 1em auto;
+    background-color: white;
+    border: orangered solid 0.2em;
+    border-radius: 1%;
+}
+.fc-event{
+    background-color: orangered;
+    font-size: 0.6em;
+    text-align: center;
+}
+.fc-event :hover{
+    background-color: aquamarine;
+    font-weight: bold;
+}
+.fc-left{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 1%;
+    margin: 0%;
+    font-weight: bold;
+    font-size: 1.5em;
+    color: orangered
+}
+.fc-button {
+    background-color: aquamarine;
+}
+.fc-head{
+    font-weight: bold;
+    font-size: 1.5em;
+}
+.fc-widget-content{
+    text-align: center;
+}
+}
